@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Print an array in reverse order.</h2>
+
+<br/>
+
+<p id="rev"></p>
+<button onclick="myFunction()">Reverse the array</button>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("rev").innerHTML = fruits;
+
+function myFunction() {
+  fruits.reverse();
+  document.getElementById("rev").innerHTML = fruits;
+}
+</script>
+
+</body>
+</html>
