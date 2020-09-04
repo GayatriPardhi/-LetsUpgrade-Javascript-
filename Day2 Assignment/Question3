@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Program to search for a element in a array of strings </h3>
+<p id="d"></p>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var n = fruits.includes("Mango");
+
+document.getElementById("d").innerHTML = n;
+
+</script>
+
+</body>
+</html>
