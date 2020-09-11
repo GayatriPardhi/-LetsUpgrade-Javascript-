@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
 <h2>Program to search for a particular character in a string</h2>
-
 <button onclick="myFunction()">Search for character</button>
-
 <p id="s"></p>
-
 <script>
 function myFunction() {
   var str = "Good Morning";
@@ -15,6 +11,5 @@ function myFunction() {
   document.getElementById("s").innerHTML = n;
 }
 </script>
-
 </body>
 </html>
