@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .data {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      
+        width: 90%;
+        background-color: palevioletred;
+        margin-left: 2%;
+        margin-top: 60px;
+        padding: 20px;
+      }
+      table{
+          width: 100%;
+          margin-top: 20px;
+      }
+      th,td{
+          height: 40px;
+          text-align: center;
+          padding:5px ;
+      }
+      input{
+          height: 35px;
+          text-align: center;
+          width: 155px;
+         
+      }
+      button{
+          padding: 10px;
+      }
+      .form {
+        margin-top: 20px;
+        padding: 5px;
+      }
+      .form1 {
+        margin-top: 40px;
+        padding: 10px;
+     
+      }
+      body{
+        background-color: rgb(79, 117, 79);
+      }
+     
+    </style>
+  </head>
+  <body>
+    
+<div class="data">
+     <center> <h1>Bus Details</h1></center>
+      <div class="form">
+<form onsubmit="addBus(event)">
+    <input type="text" required placeholder=" Enter name" id="name">
+    <input type="text" required placeholder=" Enter source" id="source">
+    <input type="text" required placeholder=" Enter destination" id="destination">
+    <input type="number" required placeholder=" Enter number" id="num">
+    <input type="number" required placeholder="passanger capacity" id="passanger">
+    <button type="submit">Add Bus</button>
+</form>
+</div>
+<div class="form1">
+  search by source:  <input type="text" placeholder="search by source"  id="searchBySource"
+    onkeyup="searchBySource()"/>
+    search by destination: <input type="text" placeholder="search by destination"  id="searchByDestination"
+    onkeyup="searchByDestination()"/>
+</div>
+
+      <table border="2" class="=table" cellspacing ="0">
+          <thead>
+            <tr><th>Index</th>
+                      <th>Name </th>
+                      <th>source</th>
+                      <th>destination</th>
+                      <th>number</th>
+                      <th>passanger capacity</th>
+                  </tr>
+            <tbody class="tdata" id="tdata"></tbody>
+            </thead>
+      </table>
+    </div>
+
+    <script src="index2.js"></script>
+  
+  </body>
+</html>
